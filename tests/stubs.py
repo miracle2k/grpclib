@@ -21,7 +21,7 @@ class TransportStub(asyncio.Transport):
 
 class DummyHandler(AbstractHandler):
 
-    def accept(self, stream, headers):
+    def accept(self, stream, headers, release_stream):
         pass
 
     def cancel(self, stream):
